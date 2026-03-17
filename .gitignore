@@ -205,3 +205,48 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Real transaction files - never commit
+data/private/
+*.csv
+*.xlsx
+*.xls
+
+# JSON files
+*.json
+
+# Selectively allow mock data for portfolio demo
+!data/mock/
+!data/mock/**
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.tfvars
+!terraform/example.tfvars
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/.user.yml
+dbt/profiles.yml
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+
+# Reports
+reports/*.csv
+reports/*.xlsx
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
